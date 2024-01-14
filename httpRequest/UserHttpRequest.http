@@ -1,0 +1,31 @@
+### Get user to id
+GET http://localhost:3000/users/1
+
+### Get user to FullName
+Get http://localhost:3000/users?FullName=Bob Hekson
+
+### Create user
+POST http://localhost:3000/users/signup
+Content-Type: application/json
+
+{
+    "FullName": "//G Hekson",
+    "DateBirth": "",
+    "email": "testEmail@gmail.com",
+    "password": "feweqwe"
+}
+
+
+### Delete user to id
+DELETE http://localhost:3000/users/2
+
+### Update user
+PATCH http://localhost:3000/users/1
+Content-Type: application/json
+
+{
+    "FullName": "Bob Hekson2",
+    "DateBirth": "",
+    "email": "testEmail@gmail.com",
+    "password": "feweqwe"
+}
